@@ -8,11 +8,12 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "ng build"
+    "postinstall": "ng build --aot --prod"
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "~8.2.13",
+    "@angular-devkit/build-angular": "0.803.24",
     "@angular/common": "~8.2.13",
     "@angular/compiler": "~8.2.13",
     "@angular/core": "~8.2.13",
@@ -34,7 +35,6 @@
     "typescript": "^3.5.3"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "0.803.24",
     "@angular/language-service": "~8.2.13",
     "@types/jasmine": "~3.4.4",
     "@types/jasminewd2": "~2.0.8",
