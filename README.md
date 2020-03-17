@@ -1,5 +1,7 @@
 # RandomMath
 
+## Reachable under https://randommath-frontend.herokuapp.com/
+
 ## First Steps
 
 Navigate to the root folder of the project and execute `npm install`. Based on the *package.json* file, npm will download all required node_modules to run a Angular application.
