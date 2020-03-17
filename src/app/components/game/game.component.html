@@ -1,0 +1,22 @@
+<h1 style="color: #343a40;">RandomMath Game</h1>
+<div *ngIf="successMessage" class="alert alert-success" role="alert">
+    {{successMessage}}
+  </div>
+  <div *ngIf="errorMessage" class="alert alert-danger" role="alert">
+    {{errorMessage}}
+  </div>
+<div class="row">
+    <div class="col">
+        <form class="form" [formGroup]="gameForm">
+            <button *ngIf="currentRoundNumber === 0 && !roundActive && !nextRoundTimer" class="btnstart" (click)="startGame()">Start</button>
+            <div *ngIf="nextRoundTimer !== 0 && nextRoundTimer !== -1" class="timer">{{nextRoundTimer}}</div>
+            <div id="task" *ngIf="roundActive">
+                <div class="timeborder">{{roundTimer}}</div>
+                <div class="border">{{currentRound.number1}}</div> <div class="border">{{currentRound.symbol}}</div>
+                <div class="border">{{currentRound.number2}}</div> <div class="border">=</div>
+                <input class="border" type="number" numeric step="0.1" inputmode="numeric" digitOnly maxlength="6" formControlName="resultInput" pattern="[0-9]+"/>
+                <button class="okbtn" (click)="stopRound()">OK</button>
+            </div>
+        </form>
+    </div>
+</div>
