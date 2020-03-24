@@ -1,0 +1,3 @@
+[submodule "HerokuDeployment"]
+	path = HerokuDeployment
+	url = https://bitbucket.org/die-spengergasse/1920-5xhif-bap-gaber/src/HerokuDeployment/
